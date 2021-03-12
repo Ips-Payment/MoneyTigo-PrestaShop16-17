@@ -1,21 +1,42 @@
-Last updated on March 01, 2021
+# MoneyTigo - Payment module for Prestashop 1.6 and 1.7
 
-1 How to install this extension
-<br>This module is compatible from version 1.6.x to version 1.7.x of PrestaShop
-<br>
-<b>STEP 1</b> - Module installation<br>
-1 Download this module
-2 Log in to your Prestashop dashboard
-3 Go to the module manager
-4 Click on "add a module"
-5 Click on "Select a file"<br>
-<br>
-The module installs automatically, wait then go to the next step<br>
-<br>
-<b>STEP 2</b> - Module settings<br>
-Either you are already on the configuration page, or you must go there, for that in your prestashop dashboard go to the module manager then look for the "MoneyTigo" module in the list, then click on "Configure"<br>
+This payment module allows you to install MoneyTigo on Prestashop version 1.6.x and 1.7.x, the source code of the module is available by Github in order to allow the user (merchant) of moneytigo to participate in its evolution.
 
-You must indicate your API key and your Secret key, for that go to your IPS Payment dashboard then click on the left menu "Settings> My merchant account"<br>
-Then click on the wheel corresponding to your website (if you do not have a site, you must add it).<br>
-You just have to copy / paste the keys requested in the prestashop module.<br>
-Save, the module is installed & configured!<br>
+## Installation
+
+First of all, start by downloading the module either from your management space (MoneyTigo for the latest stable version) or here to benefit from the latest modifications.
+
+```html
+1 Login in to your prestashop dashboard (backoffice)
+2 Go to the module manager
+3 Click on "add a module"
+4 Click on "select a file"
+
+"The installation will be automatically launched, then wait for Prestashop to indicate the success of the operation."
+
+```
+
+## Settings
+
+```html
+
+Go to the configuration of the MoneyTigo module and fill in the following information:
+
+1 API key
+2 Secret key
+
+(which you will find in the list of your websites declared on MoneyTigo)
+
+Save, the payment module will be immediately operational.
+
+```
+
+## The module is not displayed?
+Several reasons can explain this :
+
+```html
+1 Your API key and secret key is not entered
+2 You did not activate the payment method
+3 You have not selected MoneyTigo for the delivery countries
+4 You have a module that operates a restriction
+```
